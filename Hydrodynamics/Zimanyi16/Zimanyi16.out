@@ -1,0 +1,23 @@
+\BOOKMARK [2][]{Outline0.1}{Introduction}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Equations of hydrodynamics}{}% 2
+\BOOKMARK [2][]{Outline0.3}{Numerical scheme}{}% 3
+\BOOKMARK [3][]{Outline0.3.1.6}{MUSTA}{Outline0.3}% 4
+\BOOKMARK [3][]{Outline0.3.2.7}{Code testing}{Outline0.3}% 5
+\BOOKMARK [3][]{Outline0.3.3.8}{Initial condition}{Outline0.3}% 6
+\BOOKMARK [3][]{Outline0.3.4.10}{Description of asymmetries}{Outline0.3}% 7
+\BOOKMARK [2][]{Outline0.4}{Nonrelativistic results}{}% 8
+\BOOKMARK [3][]{Outline0.4.1.12}{Effect of viscosity}{Outline0.4}% 9
+\BOOKMARK [3][]{Outline0.4.2.15}{Effect of speed of sound}{Outline0.4}% 10
+\BOOKMARK [3][]{Outline0.4.3.16}{Pressure gradient}{Outline0.4}% 11
+\BOOKMARK [2][]{Outline0.5}{Relativistic results}{}% 12
+\BOOKMARK [3][]{Outline0.5.1.17}{Effect of speed of sound}{Outline0.5}% 13
+\BOOKMARK [3][]{Outline0.5.2.18}{Pressur}{Outline0.5}% 14
+\BOOKMARK [3][]{Outline0.5.3.19}{Freeze-out}{Outline0.5}% 15
+\BOOKMARK [2][]{Outline0.6}{Summary}{}% 16
+\BOOKMARK [2][]{Outline0.7}{Relativistic versus nonrelativistic hydrodynamics}{}% 17
+\BOOKMARK [3][]{Outline0.7.1.22}{Compare}{Outline0.7}% 18
+\BOOKMARK [2][]{Outline0.8}{Relativistic versus nonrelativistic hydrodynamics}{}% 19
+\BOOKMARK [3][]{Outline0.8.1.24}{Relativistic code test}{Outline0.8}% 20
+\BOOKMARK [3][]{Outline0.8.2.27}{Testing of code}{Outline0.8}% 21
+\BOOKMARK [3][]{Outline0.8.3.28}{Operator splitting}{Outline0.8}% 22
+\BOOKMARK [3][]{Outline0.8.4.29}{Viscous hydrodynamics}{Outline0.8}% 23

@@ -1,0 +1,33 @@
+\select@language {magyar} \beamer@endinputifotherversion {3.33pt}
+\select@language {magyar} \beamer@sectionintoc {1}{Bevezet\IeC {\H o}}{2}{0}{1}
+\select@language {magyar} \beamer@sectionintoc {2}{Hidrodinamika egyenletei}{5}{0}{2}
+\select@language {magyar} \beamer@sectionintoc {3}{Numerikus m\IeC {\'o}dszer}{6}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{1}{MUSTA}{7}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{2}{Kifejlesztett k\IeC {\'o}d tesztel\IeC {\'e}se}{8}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{3}{Kezd\IeC {\H o}eloszl\IeC {\'a}sok}{9}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{4}{Aszimmetria param\IeC {\'e}terek}{10}{0}{3}
+\select@language {magyar} \beamer@sectionintoc {4}{Nemrelativisztikus eredm\IeC {\'e}nyek}{11}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{1}{Viszkozit\IeC {\'a}s hat\IeC {\'a}sa}{11}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{2}{Hangsebess\IeC {\'e}g hat\IeC {\'a}sa}{14}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{3}{Nyom\IeC {\'a}sgradiens hat\IeC {\'a}sa}{15}{0}{4}
+\select@language {magyar} \beamer@sectionintoc {5}{Relativisztikus eredm\IeC {\'e}nyek}{16}{0}{5}
+\select@language {magyar} \beamer@subsectionintoc {5}{1}{Hangsebess\IeC {\'e}g hat\IeC {\'a}sa}{16}{0}{5}
+\select@language {magyar} \beamer@subsectionintoc {5}{2}{Nyom\IeC {\'a}sgradiens hat\IeC {\'a}sa}{17}{0}{5}
+\select@language {magyar} \beamer@subsectionintoc {5}{3}{Kifagy\IeC {\'a}s}{18}{0}{5}
+\select@language {magyar} \beamer@sectionintoc {6}{\IeC {\"O}sszegz\IeC {\'e}s}{19}{0}{6}
+\select@language {magyar} \beamer@sectionintoc {8}{Relativisztikus \IeC {\'e}s nemrelativisztikus hidrodinamika}{24}{0}{7}
+\select@language {magyar} \beamer@subsectionintoc {8}{1}{\IeC {\"O}sszehasonl\IeC {\'\i }t\IeC {\'a}s}{24}{0}{7}
+\select@language {magyar} \beamer@sectionintoc {9}{Relativisztikus \IeC {\'e}s nemrelativisztikus hidrodinamika}{25}{0}{8}
+\select@language {magyar} \beamer@sectionintoc {10}{Numerikus m\IeC {\'o}dszer}{26}{0}{9}
+\select@language {magyar} \beamer@subsectionintoc {10}{1}{Relativisztikus k\IeC {\'o}d tesztel\IeC {\'e}se}{26}{0}{9}
+\select@language {magyar} \beamer@subsectionintoc {10}{2}{Kifejlesztett k\IeC {\'o}d tesztel\IeC {\'e}se}{29}{0}{9}
+\select@language {magyar} \beamer@subsectionintoc {10}{3}{Oper\IeC {\'a}torok felbont\IeC {\'a}sa}{32}{0}{9}
+\select@language {magyar} \beamer@subsectionintoc {10}{4}{Viszk\IeC {\'o}zus hidrodinamika}{33}{0}{9}
+\select@language {magyar} \beamer@sectionintoc {11}{Nemrelativisztikus eredm\IeC {\'e}nyek}{34}{0}{10}
+\select@language {magyar} \beamer@subsectionintoc {11}{1}{Viszkozit\IeC {\'a}s hat\IeC {\'a}sa}{34}{0}{10}
+\select@language {magyar} \beamer@subsectionintoc {11}{2}{Hangsebess\IeC {\'e}g hat\IeC {\'a}sa}{35}{0}{10}
+\select@language {magyar} \beamer@subsectionintoc {11}{3}{Nyom\IeC {\'a}sgradiens hat\IeC {\'a}sa}{36}{0}{10}
+\select@language {magyar} \beamer@sectionintoc {12}{Relativisztikus eredm\IeC {\'e}nyek}{37}{0}{11}
+\select@language {magyar} \beamer@subsectionintoc {12}{1}{Hangsebess\IeC {\'e}g hat\IeC {\'a}sa}{37}{0}{11}
+\select@language {magyar} \beamer@subsectionintoc {12}{2}{Nyom\IeC {\'a}sgradiens hat\IeC {\'a}sa}{38}{0}{11}
+\select@language {magyar} \beamer@sectionintoc {13}{Kitekint\IeC {\'e}s}{39}{0}{12}

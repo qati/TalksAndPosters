@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[landscape]{geometry}
+
+ \usepackage[usenames,dvipsnames]{pstricks}
+ \usepackage{epsfig}
+ \usepackage{pst-grad} % For gradients
+ \usepackage{pst-plot} % For axes
+\begin{document}
+% Generated with LaTeXDraw 2.0.8
+% Sun Apr 12 22:50:00 CEST 2015
+% \usepackage[usenames,dvipsnames]{pstricks}
+% \usepackage{epsfig}
+% \usepackage{pst-grad} % For gradients
+% \usepackage{pst-plot} % For axes
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-4.72)(27.03875,4.72)
+\rput(7.946875,0.0){\includegraphics{/home/attila/ic.eps}}
+\usefont{T1}{ptm}{m}{n}
+\rput(0.92375,3.42){\LARGE $\epsilon_2=0.8,\;\epsilon_3=0,\;\epsilon_4=0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(7.751407,3.42){\LARGE $\epsilon_2=0.8,\;\epsilon_3=0.5,\;\epsilon_4=0$}
+\usefont{T1}{ptm}{m}{n}
+\rput(14.907969,3.42){\LARGE $\epsilon_2=0.8,\;\epsilon_3=0.5,\;\epsilon_4=0.4$}
+\end{pspicture} 
+}
+\end{document}

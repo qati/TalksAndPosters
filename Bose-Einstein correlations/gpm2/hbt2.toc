@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{What and how we measure}{2}{0}{1}
+\beamer@sectionintoc {2}{Fittings}{4}{0}{2}
+\beamer@sectionintoc {3}{Model}{13}{0}{3}

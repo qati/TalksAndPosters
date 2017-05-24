@@ -1,0 +1,9 @@
+\select@language {magyar} \beamer@endinputifotherversion {3.24pt}
+\select@language {magyar} \beamer@sectionintoc {1}{Bevezet\IeC {\H o}}{6}{0}{1}
+\select@language {magyar} \beamer@sectionintoc {2}{Hidrodinamika egyenletei}{12}{0}{2}
+\select@language {magyar} \beamer@sectionintoc {3}{Numerikus m\IeC {\'o}dszer}{19}{0}{3}
+\select@language {magyar} \beamer@sectionintoc {4}{K\IeC {\'o}d tesztel\IeC {\'e}se}{30}{0}{4}
+\select@language {magyar} \beamer@sectionintoc {6}{Nemrelativisztikus eredm\IeC {\'e}nyek}{38}{0}{5}
+\select@language {magyar} \beamer@sectionintoc {7}{Relativisztikus eredm\IeC {\'e}nyek}{44}{0}{6}
+\select@language {magyar} \beamer@sectionintoc {8}{Kifagy\IeC {\'a}s}{47}{0}{7}
+\select@language {magyar} \beamer@sectionintoc {9}{\IeC {\"O}sszegz\IeC {\'e}s}{49}{0}{8}

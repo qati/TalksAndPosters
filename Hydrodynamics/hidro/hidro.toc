@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Nemrelativisztikus hidrodinamika}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Az egyenletek}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{A hidrodinamika egyenletei}{3}{0}{1}
+\beamer@subsectionintoc {1}{3}{Megold\IeC {\'a}sok}{8}{0}{1}
+\beamer@sectionintoc {2}{Relativisztikus hidrodinamika}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Egyenletek}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Megold\IeC {\'a}sok}{16}{0}{2}

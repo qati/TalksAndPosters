@@ -1,0 +1,5 @@
+\select@language {magyar} \beamer@endinputifotherversion {3.36pt}
+\select@language {magyar} \beamer@sectionintoc {1}{HBT}{3}{0}{1}
+\select@language {magyar} \beamer@sectionintoc {2}{HBT effektus a r\IeC {\'e}szecskefizik\IeC {\'a}ban}{4}{0}{2}
+\select@language {magyar} \beamer@sectionintoc {3}{Motiv\IeC {\'a}ci\IeC {\'o}}{8}{0}{3}
+\select@language {magyar} \beamer@sectionintoc {4}{Model}{10}{0}{4}

@@ -1,0 +1,252 @@
+\documentclass{beamer}
+%\mode<presentation>
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usetheme{CambridgeUS}
+\usecolortheme{dolphin}
+\usepackage{amsmath,amssymb,amsfonts, bm}
+\usepackage{mathpazo}
+\usepackage{graphicx,tabularx,epsfig}
+\usepackage[compatibility=false]{caption}
+\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{mathtools}
+
+
+\setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=0.07]at (current page.center){\includegraphics[width=\paperwidth]{pic/bkg}};}
+\usepackage{tikz}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+
+
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{enumerate items}[square]
+
+\definecolor{Red}{RGB}{190,0,0}
+\definecolor{Blue}{RGB}{0,0,190}
+\setbeamertemplate{headline}{}
+
+
+
+\title[Three particle Levy HBT]{\Large{PHENIX PLHF PWG}\\Three particle Bose-Einstein correlation}
+\author[Attila Bagoly]{Attila Bagoly\\ Eötvös Loránd University \vspace{0.5cm}}
+\date[\today]{\today}
+\institute[ELTE]{
+\large{Supervisor: Máté Csanád}
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\section{What and how we measure}
+\begin{frame}
+\frametitle{Details of analysis}
+\begin{itemize}
+\setlength{\itemsep}{22pt}
+\item PPG194 generalized to three particle
+\item Same event-mixing method to measure correlation as in PPG194
+\item Same global, track and pair cuts as PPG194
+\item Coulomb-correction from Generalized Riverside
+\item Goal: three particle correlation strength:
+\begin{equation*}
+\lambda_3 \equiv  C_3(k_{12}=k_{13}=k_{23}=0)-1
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Quantum statistical correlation function}
+\begin{itemize}
+\setlength{\itemsep}{16pt}
+\item Correlation function: $C_3(\bm{k_1}, \bm{k_2}, \bm{k_3}) = C_3^{(0)}(\bm{k_1}, \bm{k_2}, \bm{k_3})K(\bm{k_1}, \bm{k_2}, \bm{k_3})$
+\item Approximation for $C_3^{(0)}$ can be derived (similar as in PPG194):
+\begin{align}
+C_3^{(0)}(k_{12}, k_{13}, k_{23}) = 1+ \ell_3e^{-0.5(|2k_{12}R|^\alpha+|2k_{13}R|^\alpha+|2k_{23}R|^\alpha)}\nonumber\\
++\ell_2\bigg(e^{|2k_{12}R|^\alpha}+e^{|2k_{13}R|^\alpha}+e^{|2k_{23}R|^\alpha}\bigg)
+\end{align}
+\item Background: $N(1+\epsilon k_{12})(1+\epsilon k_{13})(1+\epsilon k_{23})$
+\item Fitted parameters: $\ell_2, \ell_3$, $\epsilon$, $N$
+\item We already know (from PPG194): $R$, $\alpha$
+\item We are looking for: $\lambda_3 \equiv  C_3(k_{12}=k_{13}=k_{23}=0)-1=\ell_3+3\ell_2$
+\end{itemize}
+\end{frame}
+
+
+\section{Fittings}
+
+\begin{frame}
+\frametitle{Diagonal visualization of fits}
+\begin{itemize}
+\setlength{\itemsep}{5pt}
+\item Visualization in $k_{12}=k_{13}=k_{23}$ subspace (3D not possible):  shows good fits
+\item Fitted: $\ell_2$, $\ell_3$, $\epsilon$, $N$; Fixed (PPG194): $R$, $\alpha$
+\item Consistency check: fit $\alpha$, $R$ $\rightarrow$ same as in PPG194
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.13]{pic/C_icharge0_pt2}
+\includegraphics[scale=0.13]{pic/C_icharge0_pt29}
+
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Systematic error analysis}
+\begin{itemize}
+\setlength{\itemsep}{10pt}
+\item Same cuts as in PPG 194
+\item PID arm: East, West, Both
+\item Fit range: 3 ranges
+\item PID cut: 3 cut settings
+\item PID det. matching cut: 3 cut settings
+\item PC3 matching cut: 3 cut settings
+\item PID det. pair cut: 3 cut settings
+\item DC pair cut: 3 cut settings
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Fit parameter $\ell_2$ and $\ell_3$}
+\begin{minipage}{.38\textwidth}
+\begin{itemize}
+\setlength{\itemsep}{20pt}
+\item Fitted: $\ell_2$, $\ell_3$, $\epsilon$, $N$; Fixed (PPG194): $R$, $\alpha$
+\item $\ell_3$ true three particle correlation strength
+\item $\ell_2$ two particle correlation (part of three particle corr.) strength
+\end{itemize}
+\end{minipage}
+\begin{minipage}{.61\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{pic/l2}\\
+\includegraphics[scale=0.25]{pic/l3}
+\end{figure}
+\end{minipage}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Derived parameter: $\lambda_3$}
+\begin{itemize}
+\setlength{\itemsep}{10pt}
+\item Fitted: $\ell_2$, $\ell_3$, $\epsilon$, $N$; Fixed (PPG194): $R$, $\alpha$
+\item $\lambda_3 \equiv  C_3(k_{12}=k_{13}=k_{23}=0)-1 = \ell_3+3\ell_2$
+\item  Fully thermal emission, no Halo: $\lambda_3=5$
+\item Core-Halo + thermal: $0<\lambda_3<5$
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.3]{pic/lambda3}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Core-Halo independent parameter}
+\begin{itemize}
+\item $\kappa_3\equiv\frac{\lambda_3-3\lambda_2}{2\sqrt{\lambda_2^3}}$ not depend on $f_c$ ($f_c=\mathrm{core}/(\mathrm{core}+\mathrm{halo})$)
+\item $\lambda_2$ from PPG194
+\item Real systematic error: cut modification applied to $\lambda_2$
+\item Core-Halo + thermal emission: $\kappa_3=1$
+\item additional effect (eg. not fully thermal): $\kappa_3\neq 1$
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.3]{pic/npar}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{$f_c$ vs $p_c$}
+\begin{itemize}
+\item Partial coherence ($p_c=\mathrm{coherent}/(\mathrm{coherent}+\mathrm{incoherent})$, $f_c=\mathrm{core}/(\mathrm{core}+\mathrm{halo})$):
+
+ 
+$\lambda_2=f_c^2\big[(1-p_c)^2+2p_c(1-p_c)\big]$
+$\lambda_3=2f_c^3\big[(1-p_c)^3+3p_c(1-p_c)^2\big]+3f_c^2\big[(1-p_c)^2+2p_c(1-p_c)\big]$
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.3]{pic/fcpc/5}
+\includegraphics[scale=0.3]{pic/fcpc/9}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Summary}
+\begin{itemize}
+\setlength{\itemsep}{24pt}
+\item We will ask perliminary for: diagonal visualization of fit (1), $\lambda_3$, $\kappa_3$, 1-2 $f_c-p_c$ plot
+\item Same cuts for systematic error analysis as in PPG194
+\item Systematic error shows $\lambda_3$, $\kappa_3$ in Core-Halo model range
+\item Analysis note in progress, soon will be finished
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[noframenumbering]
+\frametitle{Details of measurement}
+\begin{itemize}
+\setlength{\itemsep}{16pt}
+\item Low bin behavior:
+\begin{equation}
+k_{ij}\rightarrow 0 \;\;\xRightarrow{\;\;\;?\;\;\;\;}\;\; A,B\rightarrow 0
+\end{equation}
+\begin{figure}
+\includegraphics[scale=0.25]{pic/AB2}
+\end{figure}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+\frametitle{Details of measurement}
+\begin{itemize}
+\setlength{\itemsep}{10pt}
+\item The correlation:
+$C_3(k_{12}, k_{13}, k_{23})=\frac{A(k_{12}, k_{13}, k_{23})}{B(k_{12}, k_{13}, k_{23})}\frac{\int B}{\int A}$
+\item Triangle inequality for $\vec{k}_{12}$, $\vec{k}_{13}$, $\vec{k}_{23}$
+\item Order within triplet doesn't matter
+\item But when we measure do matter $\Rightarrow$ we have to fold the histogram
+		$A(5,6,7) \;+=\; A(6,7,5)\; + \;A(7,5,6)\; + \;A(5,7,6)\; +...$
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.2]{pic/C1}
+\includegraphics[scale=0.2]{pic/C2}
+\end{figure}
+\end{frame}
+
+\section{Model}
+
+
+\begin{frame}[noframenumbering]
+\frametitle{Coulomb correction}
+\begin{itemize}
+\setlength{\itemsep}{16pt}
+\item Corrected model:
+\begin{equation}
+C_3(k_{12}, k_{13}, k_{23}) = C_3^{(0)}(k_{12}, k_{13}, k_{23})\cdot K_3(k_{12}, k_{13}, k_{23})
+\end{equation}
+\item ''Generalized Riverside'' method for 3 particle Coulomb problem
+\begin{equation}
+K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
+\end{equation}
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.25]{pic/coulomb1}
+\includegraphics[scale=0.235]{pic/coulomb2}
+\end{figure}
+\end{frame}
+
+
+
+
+
+\end{document}
+

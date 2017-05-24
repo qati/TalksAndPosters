@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[landscape]{geometry}
+
+ \usepackage[usenames,dvipsnames]{pstricks}
+ \usepackage{epsfig}
+ \usepackage{pst-grad} % For gradients
+ \usepackage{pst-plot} % For axes
+\begin{document}
+% Generated with LaTeXDraw 2.0.8
+% Sun Apr 12 21:04:53 CEST 2015
+% \usepackage[usenames,dvipsnames]{pstricks}
+% \usepackage{epsfig}
+% \usepackage{pst-grad} % For gradients
+% \usepackage{pst-plot} % For axes
+\scalebox{1} % Change this value to rescale the drawing.
+{
+\begin{pspicture}(0,-5.47)(21.366875,5.47)
+\rput(11.176875,0.0){\includegraphics{/home/attila/Physics/Work/relativistic_hydrodynamics/Presentations/OTDK/pic/flux.eps}}
+\usefont{T1}{ppl}{m}{n}
+\rput(7.95375,-3.4){\Huge $Q_i^n$}
+\usefont{T1}{ppl}{m}{n}
+\rput(12.24375,-3.4){\Huge $Q_{i+1}^n$}
+\usefont{T1}{ppl}{m}{n}
+\rput(8.154843,3.7){\Huge $Q_i^{n+1}$}
+\usefont{T1}{ppl}{m}{n}
+\rput(12.244844,3.7){\Huge $Q_{i+1}^{n+1}$}
+\usefont{T1}{ppl}{m}{n}
+\rput(9.79375,4.9159374){\Huge $\partial_t Q + \partial_x F(Q)=0$}
+\usefont{T1}{ppl}{m}{n}
+\rput(4.39375,-0.2040625){\Huge $F_{i-\frac{1}{2}}$}
+\usefont{T1}{ppl}{m}{n}
+\rput(8.62375,-0.2040625){\Huge $F_{i+\frac{1}{2}}$}
+\usefont{T1}{ppl}{m}{n}
+\rput(15.02375,-0.2040625){\Huge $F_{i+\frac{3}{2}}$}
+\end{pspicture} 
+}
+
+
+
+\end{document}
+

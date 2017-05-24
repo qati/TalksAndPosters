@@ -1,0 +1,24 @@
+\select@language {magyar} \beamer@endinputifotherversion {3.36pt}
+\select@language {magyar} \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\select@language {magyar} \beamer@sectionintoc {2}{Equations of hydrodynamics}{4}{0}{2}
+\select@language {magyar} \beamer@sectionintoc {3}{Numerical scheme}{5}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{1}{MUSTA}{6}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{2}{Code testing}{7}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{3}{Initial condition}{8}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{4}{Description of asymmetries}{10}{0}{3}
+\select@language {magyar} \beamer@sectionintoc {4}{Nonrelativistic results}{12}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{1}{Effect of viscosity}{12}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{2}{Effect of speed of sound}{15}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{3}{Pressure gradient}{16}{0}{4}
+\select@language {magyar} \beamer@sectionintoc {5}{Relativistic results}{17}{0}{5}
+\select@language {magyar} \beamer@subsectionintoc {5}{1}{Effect of speed of sound}{17}{0}{5}
+\select@language {magyar} \beamer@subsectionintoc {5}{2}{Pressur}{18}{0}{5}
+\select@language {magyar} \beamer@subsectionintoc {5}{3}{Freeze-out}{19}{0}{5}
+\select@language {magyar} \beamer@sectionintoc {6}{Summary}{21}{0}{6}
+\select@language {magyar} \beamer@sectionintoc {7}{Relativistic versus nonrelativistic hydrodynamics}{22}{0}{7}
+\select@language {magyar} \beamer@subsectionintoc {7}{1}{Compare}{22}{0}{7}
+\select@language {magyar} \beamer@sectionintoc {8}{Relativistic versus nonrelativistic hydrodynamics}{23}{0}{8}
+\select@language {magyar} \beamer@subsectionintoc {8}{1}{Relativistic code test}{24}{0}{8}
+\select@language {magyar} \beamer@subsectionintoc {8}{2}{Testing of code}{27}{0}{8}
+\select@language {magyar} \beamer@subsectionintoc {8}{3}{Operator splitting}{28}{0}{8}
+\select@language {magyar} \beamer@subsectionintoc {8}{4}{Viscous hydrodynamics}{29}{0}{8}

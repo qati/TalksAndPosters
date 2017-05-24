@@ -1,0 +1,493 @@
+\documentclass{beamer}
+%\mode<presentation>
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usetheme{CambridgeUS}
+\usecolortheme{dolphin}
+\usepackage{amsmath,amssymb,amsfonts, bm}
+\usepackage{mathpazo}
+\usepackage{graphicx,tabularx,epsfig}
+\usepackage{subcaption}
+\usepackage{rotating}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+
+
+\title[Numerikus hidrodinamika]{Nagyenergiás nehézion-ütközések numerikus hidrodinamikai modellezése}
+\author[Bagoly Attila]{Bagoly Attila \vspace{0.5cm}\\  Témavezető:\\ Csanád Máté}
+\date[2014.12.13.]{Tudományos Diákköri Konferencia\\ 2014.12.13.}
+\institute[ELTE]{ELTE TTK Atomfizikai tanszék}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Motiváció}
+Kvark-gluon plazma folyadékszerű viselkedésének következtében:
+\vspace{20pt}
+\begin{itemize}
+  \setlength{\itemsep}{16pt}
+
+\item<1-> hogyan hatnak különböző effektusok az aszimmetriák időfejlődésére
+\item<1-> olyan effektusok amelyek nem kezelhetőek analitikusan
+\item<2-> Numerikus hidrodinamika: realisztikus modell QGP-re (kf. pl. Monte-Carlo szimulációból): ekkor minden effektus hatása keveredik
+\item<3-> Kezdőfeltétel: legyen közel létező analitikus megoldásokhoz, de realisztikusabb modellt adjon
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Tartalom}
+\tableofcontents
+\end{frame}
+
+\section{Bevezető}
+\begin{frame}
+\frametitle{Bevezető}
+\begin{minipage}{0.37\textwidth}
+		\includegraphics<2->[scale=0.20]{pic/osrobbanas}
+	
+		\includegraphics<5->[scale=0.24]{pic/p2}
+		\begin{itemize}
+		\item[]
+		\end{itemize}
+  \end{minipage}
+  \begin{minipage}{0.62\textwidth}
+  \begin{itemize}
+\item<1-> Nehézion ütközések: nagy energiasűrűség $\rightarrow$  kvark szabadsági fokok
+\item<2-> Ősrobbanás: univerzum kvarkok és gluonok ``őslevese''
+\item<2-> Új ismeretek: kvark-gluon plazma vizsgálata
+\item<3-> Kísérleti tapasztalat (2005): tökéletes folyadék
+\item<4-> Nagy hatáskeresztmetszetek, rövid szabad úthossz, gyors termalizáció: statisztikus fizika
+\item<5-> Kezdeti eloszlás: aszimmetriák a kezdeti eloszlásban
+\item<6-> Aszimmetriák: kifagynak a részecskék eloszlásában
+\end{itemize}
+
+\end{minipage}
+\end{frame}
+
+\section{Hidrodinamika egyenletei}
+\begin{frame}
+\frametitle{Hidrodinamika egyenletei}
+\begin{itemize}
+\item<1-> Nemrelativisztikus hidrodinamika:
+\begin{itemize}
+\item<2-> Anyagmegmaradás:\quad \begin{large}$\dfrac{\partial \rho}{\partial t} + \bm{\nabla}\rho\bm{v}=0$\end{large}
+\item<3-> Impulzusmegmaradás:\quad \begin{center}\begin{large}$\rho\Big(\dfrac{\partial \bm{v}}{\partial t}+(\bm{v\nabla})\bm{v}\Big)=-\bm{\nabla}p +\mu\Delta\bm{v}+\Big(\zeta+\dfrac{\mu}{3}\Big)\bm{\nabla}(\bm{\nabla v})+\bm{f}$\end{large}\end{center}
+\item<4-> Energiamegmaradás: \quad\begin{large}$\dfrac{\partial \varepsilon}{\partial t}+\bm{\nabla}\varepsilon\bm{v}=-p\bm{\nabla v}+\bm{\nabla(\sigma v)}$\end{large}
+\item<4-> $\rho$ anyagsűrűség, $\bm{v}$ sebességmező, $\varepsilon$ energiasűrűség, $p$ nyomáseloszlás
+\end{itemize}
+
+
+\item<5-> Állapotegyenlet:\quad \begin{large}$\varepsilon=\kappa(T)p\quad$\end{large} ($\kappa=1/c_s^2$, $\kappa=3/2$ id. gáz)
+
+\item<6-> Relativisztikus hidrodinamika:
+\begin{Large}
+\begin{center}$T^{\mu\nu}=\big(\varepsilon+p\big)u^\mu u^\nu-pg^{\mu\nu},\quad \partial_\mu T^{\mu\nu}=0$\end{center}
+\end{Large}
+\begin{itemize}
+\item<6-> $T^{\mu\nu}$ energia-impulzus tenzor, $u^\mu$ négyes-sebesség, $g^{\mu\nu}$ metrikus tenzor
+\end{itemize}
+\item<7-> Advekciós forma: $\partial_t Q_i+\partial_x F_i(Q)+\partial_y G_i(Q)+\partial_z K_i(Q)=0$
+
+\end{itemize}
+\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Multipole solution}
+%  \begin{minipage}{0.39\textwidth}
+%    \includegraphics[scale=0.16]{pic/a1}
+
+%    \includegraphics[scale=0.2]{pic/a2}
+%  \end{minipage}
+%  \begin{minipage}{0.60\textwidth}
+%  \begin{itemize}
+%\item New exact solution of relativistic hydrodynamics by Máté Csanád and András Szabó, published Phys.Rev. C90 (2014) 054911
+%\item The solution in cylindrical coordinates:
+%$u^\mu=\frac{x^\mu}{\tau}$, $n=n_f\big(\frac{\tau_f}{\tau}\big)^3\nu(s)$, $p=p_f\big(\frac{\tau_f}{\tau}\big)^{3+3/\kappa}$
+%\item Where $\tau$ is the coordinate-proper time, $\tau_f$ is the freeze-out proper time
+%\item The s scale variable with any asymmetries 
+%$s=\frac{r^N}{R^N}\Big(1+\epsilon_{N}\cos N\phi\Big)+\frac{z^N}{R^N}$
+%\item That's a solution if $R=u_tt$
+%\end{itemize}
+%  \end{minipage}
+%\end{frame}
+
+
+\section{Numerikus módszer}
+\begin{frame}
+\frametitle{Numerikus módszer}
+\begin{itemize}
+  \setlength{\itemsep}{2pt}
+
+\item<1-> Midrapiditás: eloszlások maximuma, sőt ``plató'' $\rightarrow$ $2+1$ dimenzió
+\item<2-> Numerikus megoldás: diszkretizáció
+\item<3-> Véges térfogat módszer: mennyiségek átlaga rácspont körül
+\item<4-> Probléma: fluxusok értéke a rácspontok között, egzaktul nem lehet
+\item<5-> Instabilitás: $Q_i+Ae^{-i\bm{k}\Delta\bm{x}}$ $\rightarrow$ CFL feltétel (pl. $C=u\Delta t/ \Delta x < 1$)
+\item<6-> 2 térdimenziót bonyolult kezelni $\rightarrow$ operátor szétválasztás
+\item<7-> Viszkozitás: ideális lépés + csak viszkózus fluxussal lépés
+\end{itemize}
+\begin{center}
+\includegraphics<4->[scale=0.19]{pic/flux}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{MUSTA módszer}
+\begin{itemize}
+\item<1-> Az $l$ előrejelzett értékek: $Q^{(l)}_{i/(i+1)}$, $F^{(l)}_{i/(i+1)}\equiv F\big(Q^{(l)}_{i/(i+1)}\big)$
+\item<2-> Kezdetben: $Q^{(0)}_i\equiv Q^n_i$,  $Q^{(0)}_{i+1}\equiv Q^{n}_{i+1}$
+\item<3-> Köztes érték és fluxus:
+\begin{equation*}
+Q^{(l)}_{i+\frac{1}{2}}=\frac{1}{2}\Big[Q^{(l)}_i+Q^{(l)}_{i+1}\Big]-\frac{1}{2}\frac{\Delta t}{\Delta x}\Big[F^{(l)}_{i+1}-F^{(l)}_i\Big], \quad F_M^{(l)} \equiv F\big(Q^{(l)}_{i+\frac{1}{2}}\big)
+\end{equation*}
+
+\item<3-> Korrigált cellaközi fluxus:
+\begin{equation*}
+F^{(l)}_{i+\frac{1}{2}}=\frac{1}{4}\Big[F^{(l)}_{i+1}+2F^{(l)}_M+F^{(l)}_{i}-\frac{\Delta x}{\Delta t}\Big(Q^{(l)}_{i+1}-Q^{(l)}_i\Big)\Big]
+\end{equation*}
+\item<4-> Következő előrejelzés a korrigált fluxusok meghatározásához:
+\begin{equation*}
+Q_i^{(l+1)}=Q^{(l)}_i-\frac{\Delta t}{\Delta x}\Big[F^{(l)}_{i+\frac{1}{2}}-F^{(l)}_i\Big]
+\end{equation*}
+\begin{equation*}
+Q_{i+1}^{(l+1)}=Q^{(l)}_{i+1}-\frac{\Delta t}{\Delta x}\Big[F^{(l)}_{i+1}-F^{(l)}_{i+\frac{1}{2}}\Big]
+\end{equation*}
+\item<4-> A módszer publikálva: E. F. Toro et al, 2006, J. Comp. Phys
+\end{itemize}
+\end{frame}
+
+\section{Kód tesztelése}
+\begin{frame}
+\frametitle{Kód tesztelése}
+\begin{itemize}
+  \setlength{\itemsep}{5pt}
+\item<1-> A kódot meglévő egzakt megoldásokkal teszteltük (Csörgő et al, PhysRevC67):
+$s=\frac{x^2}{X^2(t)}+\frac{y^2}{Y^2(t)}$, $\rho = \rho_0\frac{V_0}{V}e^{-s}$,  $p=p_0\big(\frac{V_0}{V}\big)^{1+\frac{1}{\kappa}}$, $\bm{v}(t, \bm{r})=\big(\frac{\dot{X}}{X}x, \frac{\dot{Y}}{Y}y\big)$, $\ddot{X}X=\ddot{Y}Y=\frac{T_i}{m}\big(\frac{V_0}{V}\big)^{\frac{1}{\kappa}}$, $V=X(t)Y(t)$
+\item<2-> Relatív hiba a numerikus és analitikus megoldás közt
+\end{itemize}
+\begin{center}
+\visible<2->{$X=Y$ \qquad\qquad\qquad\qquad\qquad\qquad\qquad $X\neq Y$}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics<2->[width=\textwidth]{pic/sym}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics<2->[width=\textwidth]{pic/asym}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+
+\section{}
+\begin{frame}
+\frametitle{Kezdőfeltétel}
+\begin{itemize}
+\item<1-> Skálaváltozó: 
+\begin{equation*}
+s=\frac{r^2}{R^2}\Big(1+\epsilon_2\cos(2\phi)+\epsilon_3\cos(3\phi)+\epsilon_4\cos(4\phi)\Big)
+\end{equation*}
+\begin{center}
+\includegraphics[scale=0.15]{pic/a1}
+\end{center}
+\item<2-> Sebesség: nemrelativisztikus estben $0$, relativisztikus esetben Hubble-sebességmező
+\item<2-> Anyagűrűség/számsűrűség és nyomás $\propto \exp{(-s)}$
+\item<3-> Konstans nyomással analitikus megoldás: Csanád és Szabó, Phys.Rev. C90 (2014) 054911
+\item<3-> Nyomásgradiens vizsgálata: $p \propto \exp{(-\rm{pc}\cdot s)}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aszimmetriák jellemzése}
+\begin{itemize}
+  \setlength{\itemsep}{12pt}
+
+\item<1-> Aszimmetriát jellemző paraméterre: $\varepsilon_n=\langle \cos(n\phi)\rangle_{\rho/\bm{v}/p}$
+\item<2-> $\varepsilon_n$ (most bevezetett)  $\neq$ $\epsilon_m$  (kezdőfeltétel skálaváltozójában)
+\item<3-> Kezdetben a $\varepsilon_n$ és $\epsilon_m$ közti kapcsolatot becsülhetjük Taylor-sorfejtéssel:
+\vspace{10pt}
+\begin{itemize}
+ \setlength{\itemsep}{8pt}
+\item<3-> Legyen: $\chi=2+\sum_{n=2}^4\epsilon_n^2$
+\item<3-> Megjelenik: $\varepsilon_1=(\epsilon_2+\epsilon_4)\epsilon_3/\chi$
+\item<3-> $\epsilon_4$ befolyásolja: $\varepsilon_2=\epsilon_2(\epsilon_4-1)/\chi$
+\item<3-> $\varepsilon_3=-\epsilon_3/\chi$
+\item<3-> $\epsilon_2$ is létrehoz: $\varepsilon_4=(-\epsilon_4+\frac{1}{2}\epsilon_2^2)/\chi$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Nemrelativisztikus eredmények}
+
+\begin{frame}
+\frametitle{Viszkozitás hatása}
+\begin{center}
+\begin{itemize}
+  \setlength{\itemsep}{2pt}
+
+\item<1-> Energiasűrűségben és  anyagsűrűségben: lassít
+\begin{itemize}
+\item<1-> Viszkozitás: lassítja az áramlást
+\end{itemize}
+\item<2-> Sebességeloszlásban: gyorsít
+\begin{itemize}
+\item<2-> Nagyobb,kisebb aszimmetriájú részek más erőt éreznek: különbségek gyorsan eltűnnek
+\end{itemize}
+\item Ábra: \large{\textcolor{red}{$\varepsilon_1$ piros}, \textcolor{green}{$\varepsilon_2$ zöld}, \textcolor{blue}{$\varepsilon_3$ kék},  \textcolor{magenta}{$\varepsilon_4$ magenta}}
+\end{itemize}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/nonrel/eps_visc_r}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/nonrel/eps_visc_v}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Viszkozitás hatása: energiasűrűség időfejlődése}
+\begin{minipage}{0.04\textwidth}
+\rotatebox[origin=c]{90}{$\qquad$\scalebox{0.85}{$\mu=0\;\textnormal{MeVfm}/c$}}
+\rotatebox[origin=c]{90}{\scalebox{0.85}{$\mu=10\;\textnormal{MeVfm}/c$}}
+\end{minipage}
+\begin{minipage}{0.95\textwidth}
+\begin{center}
+    \includegraphics[scale=0.19]{pic/res/nonrel/anim/ev0}
+
+    \includegraphics[scale=0.19]{pic/res/nonrel/anim/ev10}
+\end{center}
+\end{minipage}
+\end{frame}
+\begin{frame}
+\frametitle{Viszkozitás hatása:  sebességeloszlás időfejlődése}
+\begin{minipage}{0.04\textwidth}
+\rotatebox[origin=c]{90}{$\qquad$\scalebox{0.85}{$\mu=0\;\textnormal{MeVfm}/c$}}
+\rotatebox[origin=c]{90}{\scalebox{0.85}{$\mu=10\;\textnormal{MeVfm}/c$}}
+\end{minipage}
+\begin{minipage}{0.95\textwidth}
+\begin{center}
+    \includegraphics[scale=0.15]{pic/res/nonrel/anim/vv0}
+
+    \includegraphics[scale=0.15]{pic/res/nonrel/anim/vv10}
+\end{center}
+\end{minipage}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hangsebesség hatása}
+\begin{center}
+\begin{itemize}
+\setlength{\itemsep}{12pt}
+\item<1-> Minden eloszlásban: aszimmetriák eltűnése lassul
+\vspace{8pt}
+\begin{itemize}
+\item<1-> Nyomáshullámok sebessége csökken $\rightarrow$ kiegyenlítődés tovább tart
+\end{itemize}
+\item Hangsebességek: $c_s^2=1\; \rm{vagy}\;0,4\; \rm{vagy}\; \rm{0,33}\; vagy\; \rm{0,25}$
+\end{itemize}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/nonrel/eps_cs2_r}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/nonrel/eps_cs2_v}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Nyomásgradiens hatása}
+\begin{center}
+\begin{itemize}
+\setlength{\itemsep}{12pt}
+\item<1-> Minden eloszlásban: aszimmetriák gyorsabban eltűnnek
+\begin{itemize}
+\vspace{8pt}
+\item<1-> Nagyobb gradiens: gyorsabb áramlás
+\end{itemize}
+\item<1-> Anyagsűrűség $\propto \exp{(-s)}$
+\item<1-> Energiasűrűség $\propto \exp{(-\rm{ec}\cdot s)}$
+\end{itemize}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/nonrel/eps_ec_r}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/nonrel/eps_ec_v}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\section{Relativisztikus eredmények}
+\begin{frame}
+\frametitle{Hangsebesség hatása}
+\begin{center}
+\begin{itemize}
+\setlength{\itemsep}{12pt}
+\item<1-> Minden eloszlásban: aszimmetriák eltűnése lassul
+\vspace{8pt}
+\begin{itemize}
+\item<1-> Nyomáshullámok sebessége csökken $\rightarrow$ kiegyenlítődés tovább tart
+\end{itemize}
+\item<2-> Kifagyás máskor történik!
+\end{itemize}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/rel/eps_kappa_n}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/rel/eps_kappa_v}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Nyomásgradiens hatása}
+\begin{center}
+\begin{itemize}
+\setlength{\itemsep}{12pt}
+\item<1-> Minden eloszlásban: aszimmetriák gyorsabban eltűnnek
+\begin{itemize}
+\vspace{8pt}
+\item<1-> Nagyobb gradiens: gyorsabb áramlás
+\end{itemize}
+\item<1-> Számsűrűség $\propto \exp{(-s)}$
+\item<1-> Nyomás $\propto \exp{(-\rm{pc}\cdot s)}$
+\end{itemize}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/rel/eps_pc_n}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/rel/eps_pc_v}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\section{Kifagyás}
+\begin{frame}
+\frametitle{Kifagyás}
+\begin{itemize}
+\item<1-> Maxwell-Jüttner típusú forrásfüggvény: 
+$S(x, p)d^4x=\mathcal{N}n(x)\exp{\bigg(-\frac{p_\mu u^\mu}{T(x)}\bigg)}H(\tau)p_\mu d^3\frac{u_\mu d^3x}{u^0} d\tau$
+\item<2-> Mérhető mennyiségek:
+$v_n(p_t)=\langle\cos(n\varphi)\rangle_{N}=\frac{1}{N(p_t)}\int_0^{2\pi} N(p_t, \varphi)\cos(n\varphi)d\varphi$
+\end{itemize}
+\begin{minipage}{0.49\textwidth}
+\begin{center}
+\includegraphics<2->[scale=0.23]{pic/res/rel/vn_kappa}
+\end{center}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{itemize}
+\item<2-> Impulzustérbeli aszimmetriák: erősen függés a hangsebességtől
+\item<2-> Hangsebességre érzékeny: kifagyás ideje
+\end{itemize}
+\end{minipage}
+\end{frame}
+
+\section{Összegzés}
+\begin{frame}
+\frametitle{Összegzés}
+\begin{itemize}
+\setlength{\itemsep}{16pt}
+\item<1-> Motiváció: egyszerű effektusok, hogyan befolyásolják az aszimmetriák időfejlődését
+\item<2-> Analitikus tárgyalásra kevés az esély, ezért numerikus módszert alkalmaztunk
+\item<3-> Kezdőfeltétel hasonló a már létező analitikus megoldásokhoz, de realisztikusabb
+\item<4-> A viszkozitás lassabbá teszi az anyag- és energiasűrűségben számolt aszimmetriák időfejlődését, sebességeloszlásban gyorsabbá
+\item<5-> Hangsebesség csökkentése lassítja az aszimmetriák időfejlődését, kifagyás később következik be
+\end{itemize}
+\end{frame}
+
+\section{}
+\begin{frame}
+\begin{center}
+\textbf{\huge{Köszönöm a figyelmet!}}
+\end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+\frametitle{Viszkozitás hatása: $\varepsilon_n$ anyag- és energiasűrűségben}
+\begin{center}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/nonrel/eps_visc_r}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/nonrel/eps_visc_p}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+\frametitle{Hangsebesség hatása: $\varepsilon_n$ anyag- és energiasűrűségben}
+\begin{center}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/nonrel/eps_cs2_r}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/nonrel/eps_cs2_p}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+\frametitle{Nyomásgradiens hatása: $\varepsilon_n$ anyag- és energiasűrűségben}
+\begin{center}
+\begin{figure}[H]
+	\centering
+    \begin{subfigure}[b]{0.49\textwidth}
+    		\includegraphics[width=\textwidth]{pic/res/nonrel/eps_ec_r}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\textwidth}
+        	\includegraphics[width=\textwidth]{pic/res/nonrel/eps_ec_p}
+	\end{subfigure}
+\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}[noframenumbering]
+\frametitle{Operátorok felbontása}
+\begin{large}
+\begin{equation*}
+\partial_t u = Au+Bu
+\end{equation*}
+
+\begin{equation*}
+u(t+\Delta t)=e^{\Delta t(A+B)}u(t)
+\end{equation*}
+
+
+\begin{equation*}
+u_{\rm{Lie}}(t+\Delta t)=e^{\Delta tA}e^{\Delta tB}u(t)
+\end{equation*}
+
+\begin{equation*}
+u_{\rm{Strang}}(t+\Delta t)=e^{\frac{1}{2}\Delta tA}e^{\Delta tB}e^{\frac{1}{2}\Delta tA}e^{\Delta tB}u(t)
+\end{equation*}
+\end{large}
+\end{frame}
+
+
+\end{document}
+

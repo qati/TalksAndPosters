@@ -1,0 +1,443 @@
+\documentclass{beamer}
+%\mode<presentation>
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usetheme{CambridgeUS}
+\usecolortheme{dolphin}
+\usepackage{amsmath,amssymb,amsfonts, bm}
+\usepackage{mathpazo}
+\usepackage{graphicx,tabularx,epsfig}
+\usepackage[compatibility=false]{caption}
+\usepackage{subcaption}
+\usepackage{rotating}
+
+
+\setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=0.07]at (current page.center){\includegraphics[width=\paperwidth]{pic/bkg}};}
+\usepackage{tikz}
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg}
+
+
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{enumerate items}[square]
+
+\definecolor{Red}{RGB}{190,0,0}
+\definecolor{Blue}{RGB}{0,0,190}
+\setbeamertemplate{headline}{}
+\DeclareMathOperator{\Tr}{Tr}
+
+
+
+\title[Relativisztikus hidrodinamika]{Relativisztikus hidrodinamika}
+\author[Bagoly Attila]{Bagoly Attila\\ ELTE TTK Fizikus MSc, 2. évfolyam \vspace{0.5cm}}
+\date[2017.02.03]{2017.02.03}
+\institute[ELTE]{
+\large{Relativisztikus atommag-ütközések}
+
+}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+
+
+\section{Bevezető}
+\begin{frame}
+\frametitle{Bevezető}
+\begin{itemize}
+  \setlength{\itemsep}{15pt}
+\item Előadáson láttuk: 
+\begin{equation}
+T^{\mu\nu}=c^{-2}(\varepsilon+p)u^\mu u^\nu -p g^{\mu\nu}\;\;\;\;\;\;\;\;\;\; \partial_\mu T^{\mu\nu}=0
+\end{equation}
+\item Részecskeszám megmarad: $\partial_\mu(n u^\mu)=0$
+
+\item Ezek adják a relativisztikus hidrodinamika egyenleteit
+
+\item Előadásban:
+ \begin{itemize}
+   \setlength{\itemsep}{10pt}
+ 	\item[--] Termodinamikai mennyiségek
+ 	\item[--] Energia-impulzus tenzor származtatása általános relativitáselméletből
+ 	\item[--] Kitekintés: numerikus megoldás
+ \end{itemize}
+
+\end{itemize}
+\end{frame}
+
+ 
+\section{Termodinamika}
+\begin{frame}
+\frametitle{Termodinamika}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+
+	\item Mikrokanonikus sokaságon: $S(E, V, N)$
+	\item Definició: 
+		\begin{equation}
+			dS = \frac{1}{T}dE +\frac{p}{T}dV-\frac{\mu}{T}dN
+			\label{eq:t2}
+\end{equation}
+	\item Elsőrendű homogén függvény: $S(\lambda E, \lambda V, \lambda N) = \lambda S(E, V, N)$
+	\item Euler tétel: $f(\lambda x, \lambda y) = \lambda^p f(x,y)$, deriválva, $\lambda=1$-et véve: $p\cdot f(x,y)=x\partial_x f + y\partial_y f$
+	\item Euler-tétel entrópiára:
+	\begin{equation}
+	S = \frac{E}{T} + \frac{pV}{T}-\frac{\mu N}{T}
+	\end{equation}
+	
+	\item Gibbs-Duhem reláció: S differenciáját Euler-tételből véve, $dS$ def.-el összevetve:
+	\begin{equation}
+	-SdT-Vdp+Nd\mu=0
+	\end{equation}
+  
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Egyensúlyi részecskeszám, energia meghatározása}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+	
+	\item Sokrészecske rendszer: $H=H_0+H_1$ teljes H operátor
+	\item Fock-tér reprezentáció:
+	\begin{align*}
+	H_0 = \sum_s \int d^3r \hat{\psi}^\dagger(r, s)\bigg(-\frac{\hbar^2\Delta}{2m} + V(r)\bigg)\hat{\psi}(r,s) \\
+	H_1 = \sum_{s_1,s_2} \int d^3r_1d^3r_2 \hat{\psi}^\dagger(r_1, s_1)\hat{\psi}^\dagger(r_2, s_2)\frac{1}{2}V(r_1, r_2)\hat{\psi}(r_2,s_2)\hat{\psi}(r_1,s_1)
+	\end{align*}
+	\item Nagykanonikus H: $K=H-\mu N$
+	\item Komplex idő $\tau = - it$ fejlődés: $\psi(r, s, \tau) = e^{\frac{1}{\hbar}K\tau}\psi(r,s)e^{-\frac{1}{\hbar}K\tau}$
+  	\item Egyidejű kommutációs relációk: $[\psi(r_1, s_1, \tau), \psi^\dagger(r_2, s_2, \tau)]_{\mp}=\delta_{s_1s_2}\delta(r_1-r_2)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Egyensúlyi részecskeszám, energia meghatározása}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+	
+	\item Véges hőmérsékleti Green függvény: 
+	\begin{equation}
+	G(r, s, \tau, r', s', \tau')=-\big\langle T_\tau {\psi(r,s, \tau)\psi^\dagger(r',s',\tau')}\big\rangle
+	\end{equation}
+	
+	\item Várható érték: $\langle O \rangle = \Tr\big[\hat{\rho} O\big]$,  $\hat{\rho}=\frac{1}{\mathcal{Z}}e^{-\beta\hat{K}}$, $\mathcal{Z}=\Tr{\big[e^{-\beta 
+	\hat{K}}\big]}$
+	\item Azonos idő: $G(r,s,\tau, r',s',\tau^+) = \mp\langle  \hat{\psi}^\dagger(r',s',\tau^+) \hat{\psi}(r,s,\tau) \rangle$
+	
+	\item Részecskeszám: 
+	\begin{equation*}
+	N(T,V,\mu) = \Big\langle \int \hat{\psi}^\dagger\hat{\psi}\Big \rangle= \mp \sum_s\int d^3r G(r,s,\tau, r, s, \tau)
+	\end{equation*}
+
+	\item Energia: $E=E(T,V,\mu) = \langle H \rangle$ 
+		\end{itemize}
+
+	\begin{equation*}
+	E=\mp\frac{1}{2}\sum_s\int d^3r \lim_{\substack{\tau'\rightarrow\tau^+\\ r'\rightarrow r}} \bigg(-\hbar\frac{\partial}{\partial \tau}-\frac{\hbar^2\Delta}{2m}+V(r)+\mu\bigg)G(r,s,\tau, r', s', \tau')
+	\end{equation*}
+	
+\end{frame}
+
+\begin{frame}
+\frametitle{Jelölések, egyszerű átalakítás}
+\begin{itemize}
+  \setlength{\itemsep}{16pt}
+	\item Sűrűségek: $\varepsilon = \frac{E}{V}$, $\sigma = \frac{S}{V}$, $n=\frac{N}{V}$ 
+	\item \Aref{eq:t2} egyenlet:
+		\begin{equation}
+			d\varepsilon = Td\sigma+\mu dn
+		\end{equation}
+	\item Fajlagos mennyiségek: $e=\frac{E}{N}$, $s=\frac{S}{N}$
+	\item \Aref{eq:t2} egyenlet:
+		\begin{equation}
+			de = T ds - pd\frac{1}{n}
+		\end{equation}
+	\item Az eddigiekkel az energiasűrűség felírható ($\varepsilon(s,n)$):
+		\begin{equation}
+			d\varepsilon = nT ds + \frac{\varepsilon+p}{n}dn
+		\end{equation}
+	\item Legyen: $w=\frac{\varepsilon+p}{n}$ (fajlagos entalpia)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hatás}
+\begin{itemize}
+  \setlength{\itemsep}{14pt}
+  \item[--] Eddig tárgyalt mennyiségek egyensúlyiak
+  \item[--] Szeretnénk időfejlődést nézni
+\end{itemize}
+
+\begin{itemize}
+  \setlength{\itemsep}{14pt}
+  \item Egy szabad részecske:
+  \begin{equation}
+  	S = - mc^2\int d\tau
+  \end{equation}
+  \item Tudjuk: $\int d^3r \delta(r-R)=1$
+  \item Hatás átírható: 
+  	\begin{equation}
+  		S = - \int d\tau d^3r mc^2\delta(r-R) \equiv - \int d\tau d^3r \varepsilon = -\int \frac{d^4x}{c}\varepsilon
+  	\end{equation}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Energia-impulzus tenzor}
+\begin{itemize}
+  \setlength{\itemsep}{14pt}
+  \item Anyagi hatás (termodinamikai energiasűrűséget írjuk be): 
+  \begin{equation}
+  	S_M = -\int\frac{d^4x}{c}\varepsilon(s, n)
+  \end{equation}
+  \item Nem Minkowski térben: Jacobi determináns: $\sqrt{-g}$
+  \item Általánosabban (nekünk $\mathcal{L}_M = \varepsilon)$:
+  \begin{equation}
+  	S_M[g] = -\int\frac{d^4x}{c} \sqrt{-g}\mathcal{L_M}
+  \end{equation}
+  \item Energia-impulzus tenzor definiciója:
+  \begin{equation}
+  \delta S_M[g] = \int \frac{d^4x}{c}\sqrt{-g}\frac{1}{2}T_{\mu\nu}\delta g^{\mu\nu}
+  \end{equation}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Konnexió}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+  	\item Téridő 4 dimenziós sokaság
+	\item Érintőtér minden pontban (minden $x$-re) lin. tér: kontravariáns vektorok
+	\item Duális tér: kovariáns vektorok. Kapcsolat: metrikus tenzor
+	\item Kis elmozdulás: $dx\rightarrow$ lin. transzformáció köti össze a két tér elemeit:
+	\begin{equation}
+		w^\mu=v^\mu-\Gamma^\mu_{\alpha\beta}v^\alpha dx^\beta
+	\end{equation}
+	\item Torziómentes: $\rightarrow$ $\Gamma_{\alpha\beta}=\Gamma_{\beta\alpha}$
+	\item Vektor kovariáns derivált:
+	\begin{equation}
+		\nabla_\mu v^\nu = \partial_\mu v^\nu+\Gamma^\nu_{\alpha\mu}v^\alpha
+\end{equation}	
+	\item Tenzor kovariáns derivált:
+	\begin{equation}
+		\nabla_\mu T^{\nu\rho} = \partial_\mu T^{\nu\rho} +\Gamma^\mu_{\alpha\mu}T^{
+\alpha\rho} +\Gamma^\rho_{\alpha\mu}T^{
+\mu\alpha}
+\end{equation}	  
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Riemann geometria}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+  	\item Ne legyen $g$ és $\Gamma$ független
+  	\item Skalárszorzat invariáns $\rightarrow \nabla_\mu g_{\alpha\beta}=0$ 
+  	\item Konnexió kifejezhető a metrikus tenzorral:
+  	\begin{equation}
+  		\Gamma_{\alpha\beta\gamma} = \frac{1}{2}\big(\partial_\beta g_{\alpha\gamma}+\partial_\gamma g_{\alpha\beta} - \partial_\alpha g_{\beta\gamma}\big)
+  	\end{equation}
+  	\item Riemann tenzor (görbületet méri): 
+  	\begin{equation}
+  	 [\nabla_\mu, \nabla_\nu]v_\gamma = R^\alpha_{\gamma\mu\nu}v_\alpha
+  	\end{equation}
+  	\item Riemann tenzor a konnexió derváltjaival és $\Gamma\Gamma$-val arányos
+  	\item Ricci-tenzor: $R_\mu\nu = R^\alpha_{\mu\alpha\nu}$
+  	\item Ricci-skalár: $R=R^\alpha_\alpha$, $R\propto \partial^2 g$, $[R]=m^{-2}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Einstein egyenlet}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+  	\item Teljes Lagrange:
+  	\begin{equation}
+  	\mathcal{L}=\mathcal{L}_M-\frac{c^4}{16\pi G}R
+  	\end{equation}
+	\item Teljes hatást variáljuk metrikus tenzor szerint: $\mathcal{L}_M\rightarrow T$, $R$ variációja bonyolult:
+	
+	\begin{equation}
+	\delta S[g] = \int \frac{d^4x}{c}\sqrt{-g}\frac{1}{2}\bigg(T_{\mu\nu}-\frac{c^4}{8\pi}\Big(R_{\mu\nu}-\frac{R}{2}g_{\mu\nu}\Big)\bigg)\delta g^{\mu\nu}
+	\end{equation}
+	\item Minden variációra el kell tűnjön:
+	\begin{equation}
+	T_{\mu\nu}=\frac{c^4}{8\pi}\Big(R_{\mu\nu}-\frac{R}{2}g_{\mu\nu}\Big)
+	\end{equation}
+	\item Jobb oldal kovariáns deriváltját véve $\rightarrow 0$
+	\item Következésképpen:
+	\begin{equation}
+		\nabla_\mu T^{\mu\nu} = 0
+\end{equation}	 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Energia-impulzus tenzor meghatározása}
+\begin{itemize}
+  \setlength{\itemsep}{10pt}
+    \item Energia-impulzus tenzor definiciója:
+  \begin{equation}
+  \delta S_M[g] = \int \frac{d^4x}{c}\sqrt{-g}\frac{1}{2}T_{\mu\nu}\delta g^{\mu\nu}
+  \end{equation}
+  \item Hatás:
+    \begin{equation}
+  	S_M = -\int\frac{d^4x}{c}\varepsilon(s, n)
+  \end{equation}
+	\item Variáljunk g szerint:
+	\begin{equation}
+	\delta S=\int \frac{d^4 x}{c}\bigg[\epsilon \delta \sqrt{-g}+\sqrt{-g}\bigg(\frac{\partial\epsilon}{\partial n}\delta n+\frac{\partial \epsilon}{\partial s}\delta s\bigg)\bigg]
+	\end{equation}
+
+
+ \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Energia-impulzus tenzor meghatározása}
+\begin{itemize}
+  \setlength{\itemsep}{20pt}
+
+\item A metrikától függ, hogy mi a térfogat!
+\item A részecskék száma nem függ attól, hogy hogy írom le a téridőt: N invariáns, metrika szerinti variációja nulla!
+
+\item Integrálási mérték: $d\Omega = dV d\tau = \sqrt{-g}d^4x/c$
+\end{itemize}
+\begin{equation*}
+\delta N = \delta \int n dV= \delta \int \frac{d^4x}{d\tau c}\sqrt{-g}n=0\Rightarrow \delta\bigg(\frac{n\sqrt{-g}}{d\tau}\bigg)=0
+\end{equation*}
+\begin{equation*}
+\Rightarrow  \delta ln\bigg(\frac{n\sqrt{-g}}{d\tau}\bigg)=0 \Rightarrow \frac{\delta n}{n}=\frac{\delta(d\tau)}{d\tau}-\frac{\delta\sqrt{-g}}{\sqrt{-g}}
+\end{equation*}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Energia-impulzus tenzor meghatározása}
+\begin{equation*}
+\delta(d\tau)=\frac{1}{c}\delta\sqrt{ds^2}=\frac{1}{c}\frac{1}{2ds}\delta(ds^2)=\frac{1}{2c^2 d\tau}\delta(g_{kl}dx^kdx^l)
+\end{equation*}
+\begin{equation*}
+\Rightarrow \frac{\delta(d\tau)}{d\tau}=\frac{1}{2c^2}\frac{dx^k}{d\tau}\frac{dx^l}{d\tau}\delta g_{kl}=\frac{1}{2c^2}u^ku^l\delta g_{kl}
+\end{equation*}
+
+Tudjuk, hogy (determináns mátrix elem szerinti deriváltja): $\frac{\partial g}{\partial g_{kl}}=g g^{kl}$
+\begin{equation*}
+\delta \sqrt{-g}=\frac{1}{2\sqrt{-g}}(-g)g^{kl}\delta g_{kl}=\frac{\sqrt{-g}}{2}g^{kl}\delta g_{kl}
+\end{equation*}
+
+\begin{equation*}
+\Rightarrow \delta n=\frac{n}{2}\bigg(\frac{u^ku^l}{c^2}-g^{kl}\bigg)\delta g_{kl}
+\end{equation*}
+Most már a hatásban megjelenő minden tag variációját ismerjük! A következőkben variálom a hatást és kapom az energia impulzus tenzort!
+\end{frame}
+
+\begin{frame}
+\frametitle{Energia-impulzus tenzor meghatározása}
+A fajlagos entrópia nem függ a metrikától $\Rightarrow \delta s = 0$ 
+\begin{equation*}
+\delta S=\int \frac{d^4 x}{c}\bigg[\epsilon \delta \sqrt{-g}+\sqrt{-g}\bigg(\frac{\partial\epsilon}{\partial n}\delta n+\frac{\partial \epsilon}{\partial s}\delta s\bigg)\bigg]\Rightarrow
+\end{equation*}
+\begin{equation*}
+\delta S=\int \frac{d^4 x}{c}\bigg[\epsilon\frac{\sqrt{-g}}{2}g^{kl}\delta g_{kl}+\sqrt{-g}w\frac{n}{2}(\frac{u^ku^l}{c^2}-g^{kl})\delta g_{kl}\bigg]
+\end{equation*}
+Elértük a célunkat! 
+\begin{equation*}
+\delta S=\int \frac{d^4 x}{c}\frac{\sqrt{-g}}{2}\bigg[\epsilon g^{kl}+(\epsilon+p)\bigg(\frac{u^ku^l}{c^2}-g^{kl}\bigg)\bigg]\delta g_{kl}
+\end{equation*}
+Tehát a keresett energia-impulzus tenzor: $T^{kl}=(\epsilon+p)\frac{u^ku^l}{c^2}-pg^{kl}$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Összefoglaló}
+\begin{itemize}
+  \setlength{\itemsep}{20pt}
+\item Anyagi hatás metrikus tenzor szerinti variációja $\Rightarrow T$
+\item $\mathcal{L}_M = \varepsilon(s,n)$
+\item Kapott egyenletek:
+\begin{equation}
+\nabla_k \bigg[\frac{1}{c^2}(\epsilon+p)u^ku^l-pg^{kl}\bigg] = 0
+\end{equation}
+\item Visszatérve Minkowski téridőbe:
+\begin{equation}
+\partial_k \bigg[\frac{1}{c^2}(\epsilon+p)u^ku^l-pg^{kl}\bigg] = 0
+\end{equation}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[noframenumbering]
+\frametitle{Tartalék: numerikus megoldás}
+2D-ben az egyenletek a következő alakba írhatók:
+\begin{large}
+\begin{equation}
+\frac{\partial Q_k}{\partial t} + \frac{\partial F_k}{\partial x} + \frac{\partial G_k}{\partial y} = 0
+\label{eq:num_advform}
+\end{equation}
+
+Tekintünk egy $[t^n, t^{n-1}]\times [x_{i-\frac{1}{2}}, x_{i+\frac{1}{2}}]\times [y_{j-\frac{1}{2}}, y_{j+\frac{1}{2}}]$ térfogatot, és a (\ref{eq:num_advform}) egyenletnek vegyük ezen térfogatra a térfogati integrálját:
+
+\end{large}
+\begin{multline}
+\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}\int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}} \big[Q_k(t^{n+1})-Q_k(t^n)\big]dydx +  \\
+\int_{t^n}^{t^{n+1}}\int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}}\big[F_k(Q(x_{i+\frac{1}{2}}))-F_k(Q(x_{i-\frac{1}{2}}))\big]dydt
+ \\
++\int_{t^n}^{t^{n+1}}\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}\big[G_k(Q(y_{j+\frac{1}{2}}))-G_k(Q( y_{j-\frac{1}{2}}))\big]dxdt= 0
+\label{eq:nfvmint1}
+\end{multline}
+
+\end{frame}
+
+\begin{frame}[noframenumbering]
+\frametitle{Tartalék: numerikus megoldás}
+
+Az egyenletet átírhatjuk a 
+\begin{equation}
+\frac{Q^{n+1}_{k; i, j}-Q^n_{k; i,  j}}{\Delta t} + \frac{F_{k; i+\frac{1}{2}}-F_{k; i-\frac{1}{2}}}{\Delta x} + \frac{G_{k; j+\frac{1}{2}}-G_{k; j-\frac{1}{2}}}{\Delta y} = 0
+\label{eq:nfvmint2}
+\end{equation}
+alakban, ahol 
+\begin{equation}
+Q^{n}_{k; i, j} = \frac{1}{\Delta x \Delta y}\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}}\int_{y_{j-\frac{1}{2}}}^{x_{j+\frac{1}{2}}} Q_k(t^{n}, x, y) dydx
+\label{eq:nfvmdefQ}
+\end{equation}
+
+\begin{equation}
+F^k_{i+\frac{1}{2}, j} = \frac{1}{\Delta t \Delta y}\int_{t^n}^{t^{n+1}}\int_{y_{j-\frac{1}{2}}}^{y_{j+\frac{1}{2}}} F_k(t, x_{i+\frac{1}{2}}, y) dydt
+\label{eq:nfvmdefF}
+\end{equation}
+
+\begin{equation}
+G^k_{i, j+\frac{1}{2}} = \frac{1}{\Delta t \Delta x}\int_{t^n}^{t^{n+1}}\int_{x_{i-\frac{1}{2}}}^{x_{i+\frac{1}{2}}} G_k(t, x, y_{j+\frac{1}{2}}) dxdt
+\label{eq:nfvmdefG}
+\end{equation}
+
+\end{frame}
+
+
+\begin{frame}[noframenumbering]
+\frametitle{Tartalék: numerikus megoldás összefoglalás}
+\begin{itemize}
+  \setlength{\itemsep}{15pt}
+
+\item<1-> Numerikus megoldás: diszkretizáció $\leftarrow$ véges térfogat módszer
+%\item<3-> Véges térfogat módszer: mennyiségek átlaga rácspont körül
+\item<1-> Probléma: fluxusok a rácspontok között
+\item<1-> Instabilitás: perturbáció amely rácspontokban nulla $\rightarrow$ CFL feltétel
+\item<1-> 2 térdimenziót bonyolult $\rightarrow$ operátor szétválasztás
+
+\end{itemize}
+\begin{center}
+\includegraphics<1->[scale=0.19]{pic/f1}
+\end{center}
+\end{frame}
+
+\end{document}
+

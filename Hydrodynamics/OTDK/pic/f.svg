@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <defs/>
+    <g>
+        <g latexdraw:type="picture" id="id104">
+            <image
+                xlink:href="/home/attila/Physics/Work/relativistic_hydrodynamics/Presentations/OTDK/pic/flux.png"
+                x="5.0" y="45.296875" height="547" width="1019"/>
+        </g>
+        <g latexdraw:type="text" id="id106" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="260.0">
+            <text x="260.0" y="496.296875"><![CDATA[$Q_i^n$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id108" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="437.0">
+            <text x="437.0" y="497.296875"><![CDATA[$Q_{i+1}^n$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id110" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="211.554685">
+            <text x="211.554685" y="150.796875"><![CDATA[$Q_i^{n+1}$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id112" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="385.5546999999999">
+            <text x="385.5546999999999" y="147.796875"><![CDATA[$Q_{i+1}^{n+1}$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id114" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="78.0">
+            <text x="78.0" y="86.0"><![CDATA[$\partial_t Q + \partial_x F(Q)=0$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id116" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="-48.0">
+            <text x="-48.0" y="349.0"><![CDATA[$F_{i-\frac{1}{2}}$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id118" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="153.0">
+            <text x="153.0" y="350.0"><![CDATA[$F_{i+\frac{1}{2}}$]]></text>
+        </g>
+        <g latexdraw:type="text" id="id120" font-family="Dialog"
+            fill="black" font-size="44" latexdraw:x="473.0">
+            <text x="473.0" y="349.0"><![CDATA[$F_{i+\frac{3}{2}}$]]></text>
+        </g>
+    </g>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:displayBorders>false</latexdraw:displayBorders>
+            <latexdraw:autoAdjust>true</latexdraw:autoAdjust>
+            <latexdraw:ppc>50</latexdraw:ppc>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:unit>cm</latexdraw:unit>
+            <latexdraw:classicGrid>false</latexdraw:classicGrid>
+            <latexdraw:gridGap>10</latexdraw:gridGap>
+            <latexdraw:code>0</latexdraw:code>
+            <latexdraw:displayGrid>true</latexdraw:displayGrid>
+            <latexdraw:magneticGrid>false</latexdraw:magneticGrid>
+            <latexdraw:autoUpdate>true</latexdraw:autoUpdate>
+            <latexdraw:version>2.0.8</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1301</latexdraw:width>
+                <latexdraw:height>744</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>65</latexdraw:x>
+                <latexdraw:y>24</latexdraw:y>
+            </latexdraw:position>
+            <latexdraw:dividerPosition>0.90315142198309</latexdraw:dividerPosition>
+            <latexdraw:displayCodePanel>true</latexdraw:displayCodePanel>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:delimitorOpacity>130</latexdraw:delimitorOpacity>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

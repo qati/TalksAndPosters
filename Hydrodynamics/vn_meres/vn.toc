@@ -1,0 +1,14 @@
+\select@language {magyar} \beamer@endinputifotherversion {3.24pt}
+\select@language {magyar} \beamer@sectionintoc {1}{Bevezet\IeC {\H o}}{3}{0}{1}
+\select@language {magyar} \beamer@sectionintoc {2}{T\IeC {\"o}k\IeC {\'e}letes kvarkfolyad\IeC {\'e}k}{5}{0}{2}
+\select@language {magyar} \beamer@subsectionintoc {2}{1}{Kvark-gluon plazma}{5}{0}{2}
+\select@language {magyar} \beamer@subsectionintoc {2}{2}{Hidrodinamika}{8}{0}{2}
+\select@language {magyar} \beamer@subsectionintoc {2}{3}{M\IeC {\'e}rhet\IeC {\H o} mennyis\IeC {\'e}gek}{9}{0}{2}
+\select@language {magyar} \beamer@sectionintoc {3}{A $v_n$ param\IeC {\'e}terek m\IeC {\'e}r\IeC {\'e}se}{11}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{1}{Esem\IeC {\'e}nys\IeC {\'\i }k m\IeC {\'o}dszer}{11}{0}{3}
+\select@language {magyar} \beamer@subsectionintoc {3}{2}{Kumul\IeC {\'a}nsok m\IeC {\'o}dszere}{17}{0}{3}
+\select@language {magyar} \beamer@sectionintoc {4}{$v_n$ \IeC {\'a}br\IeC {\'a}k}{24}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{1}{A $v_2$ k\IeC {\"u}l\IeC {\"o}nb\IeC {\"o}z\IeC {\H o} centralit\IeC {\'a}s \IeC {\'e}s r\IeC {\'e}szecsk\IeC {\'e}k eset\IeC {\'e}n}{25}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{2}{Sk\IeC {\'a}laviselked\IeC {\'e}s}{26}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{3}{$J/\psi $ r\IeC {\'e}szecske $v_2$ spektruma}{30}{0}{4}
+\select@language {magyar} \beamer@subsectionintoc {4}{4}{Direkt fotonok $v_2$ spektruma}{31}{0}{4}
