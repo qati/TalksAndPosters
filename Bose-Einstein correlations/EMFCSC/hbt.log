@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.7)  13 JUN 2017 18:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.12.7)  13 JUN 2017 21:50
 entering extended mode
 **./hbt.tex
 (hbt.tex
@@ -1348,45 +1348,29 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 34.
+(hyperref)                removing `\\' on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 39.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 39.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 39.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 39.
+(hyperref)                removing `\new@ifnextchar' on input line 35.
 
 (hbt.aux)
 \openout1 = `hbt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1453,7 +1437,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -1465,71 +1449,71 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count178
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
  (hbt.out) (hbt.out)
 \@outlinefile=\write5
 \openout5 = `hbt.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/ppl/m/n --> OT1/cmss/m/n on input line 39.
+(Font)                  OT1/ppl/m/n --> OT1/cmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/ppl/b/n --> OT1/cmss/bx/n on input line 39.
+(Font)                  OT1/ppl/b/n --> OT1/cmss/bx/n on input line 40.
 \symnumbers=\mathgroup12
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 39.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 3
-9.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 4
+0.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-39.
+40.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/ppl/m/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/ppl/m/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/zplm/b/n --> OT1/cmss/bx/n on input line 39.
+(Font)                  OT1/zplm/b/n --> OT1/cmss/bx/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/zplm/b/n --> OT1/cmss/bx/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 39.
+(Font)                  OT1/zplm/b/n --> OT1/cmss/bx/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 39.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/ppl/m/it --> OT1/cmss/m/it on input line 39.
+(Font)                  OT1/ppl/m/it --> OT1/cmss/m/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/ppl/b/it --> OT1/cmss/m/it on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 39.
+(Font)                  OT1/ppl/b/it --> OT1/cmss/m/it on input line 40.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/ppl/bx/n on input line 39.
+(Font)                  OT1/cmss/bx/n --> OT1/ppl/bx/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 39.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 40.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 39.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 40.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 3
-9.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
+0.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-39.
+40.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 39.
+ut line 40.
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\beamer\base\transla
 tor\dicts\translator-basic-dictionary\translator-basic-dictionary-English.dict"
@@ -1560,229 +1544,239 @@ tor\dicts\translator-theorem-dictionary\translator-theorem-dictionary-English.d
 ict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 39.
+LaTeX Info: Redefining \includegraphics on input line 40.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (hbt.nav)
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 43.
+ (hbt.nav) <pic/ELTE.png, id=21, 803.0pt x 803.0pt>
+File: pic/ELTE.png Graphic file (type png)
+ <use pic/ELTE.png>
+Package pdftex.def Info: pic/ELTE.png used on input line 49.
+(pdftex.def)             Requested size: 51.20435pt x 51.21495pt.
+
+
+pdfTeX warning: pdflatex (file ./pic/erice.pdf): PDF inclusion: found PDF versi
+on <1.6>, but at most version <1.5> allowed
+<pic/erice.pdf, id=22, 1670.24pt x 433.62pt>
+File: pic/erice.pdf Graphic file (type pdf)
+ <use pic/erice.pdf>
+Package pdftex.def Info: pic/erice.pdf used on input line 49.
+(pdftex.def)             Requested size: 197.25992pt x 51.21495pt.
+
+<pic/BNLPHENIX.pdf, id=23, 441.01773pt x 284.52756pt>
+File: pic/BNLPHENIX.pdf Graphic file (type pdf)
+ <use pic/BNLPHENIX.pdf>
+Package pdftex.def Info: pic/BNLPHENIX.pdf used on input line 49.
+(pdftex.def)             Requested size: 79.37976pt x 51.21495pt.
+
+<pic/bkg.jpg, id=24, 1405.25pt x 1053.9375pt>
+File: pic/bkg.jpg Graphic file (type jpg)
+ <use pic/bkg.jpg>
+Package pdftex.def Info: pic/bkg.jpg used on input line 49.
+(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 49.
+
+[1
+
+{C:/Users/qati/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pic/bkg.jp
+g> <./pic/ELTE.png> <./pic/erice.pdf> <./pic/BNLPHENIX.pdf>]
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 91.
 
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 91.
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 43.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 91.
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 43.
+(Font)              scaled to size 11.40997pt on input line 91.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 43.
+(Font)              scaled to size 8.33606pt on input line 91.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 43.
+(Font)              scaled to size 6.25204pt on input line 91.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 43.
+(Font)              scaled to size 11.40997pt on input line 91.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 43.
+(Font)              scaled to size 8.33606pt on input line 91.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 43.
+(Font)              scaled to size 6.25204pt on input line 91.
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 43.
+line 91.
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sansmathaccent\ot1m
 athkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 91.
 
 
 ("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) <pic/bkg.jpg, id=21, 1405.25pt x 1053.9375pt>
+)
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 91.
+("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+
+pdfTeX warning: pdflatex (file ./pic/corehalo2_eng.pdf): PDF inclusion: found P
+DF version <1.6>, but at most version <1.5> allowed
+<pic/corehalo2_eng.pdf, id=75, 380.87296pt x 300.33203pt>
+File: pic/corehalo2_eng.pdf Graphic file (type pdf)
+
+<use pic/corehalo2_eng.pdf>
+Package pdftex.def Info: pic/corehalo2_eng.pdf used on input line 91.
+(pdftex.def)             Requested size: 114.26276pt x 90.1003pt.
 File: pic/bkg.jpg Graphic file (type jpg)
  <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 43.
-(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 43.
-
-[1
-
-{C:/Users/qati/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pic/bkg.jp
-g>]
-File: pic/bkg.jpg Graphic file (type jpg)
- <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 55.
+Package pdftex.def Info: pic/bkg.jpg used on input line 91.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
  [2
 
-]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 75.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 75.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 75.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 75.
+ <./pic/corehalo2_eng.pdf>]
 File: pic/bkg.jpg Graphic file (type jpg)
- <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 75.
+
+<use pic/bkg.jpg>
+Package pdftex.def Info: pic/bkg.jpg used on input line 109.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
  [3
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 97.
-
-("C:\Users\qati\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)
 File: pic/bkg.jpg Graphic file (type jpg)
-
-<use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 97.
+ <use pic/bkg.jpg>
+Package pdftex.def Info: pic/bkg.jpg used on input line 129.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
  [4
 
 ]
+<pic/pionlaser.png, id=165, 542.025pt x 542.77782pt>
+File: pic/pionlaser.png Graphic file (type png)
+ <use pic/pionlaser.png>
+Package pdftex.def Info: pic/pionlaser.png used on input line 165.
+(pdftex.def)             Requested size: 135.5059pt x 135.69412pt.
+
+Overfull \vbox (21.54442pt too high) detected at line 165
+ []
+
 File: pic/bkg.jpg Graphic file (type jpg)
- <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 116.
+<use pic/bkg.jpg>
+Package pdftex.def Info: pic/bkg.jpg used on input line 165.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
  [5
 
-]
+ <./pic/pionlaser.png>]
 File: pic/bkg.jpg Graphic file (type jpg)
  <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 137.
+Package pdftex.def Info: pic/bkg.jpg used on input line 182.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
  [6
 
 ]
-File: pic/bkg.jpg Graphic file (type jpg)
-
-<use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 154.
-(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [7
-
-] <pic/coulomb1.png, id=223, 742.6067pt x 506.03426pt>
-File: pic/coulomb1.png Graphic file (type png)
-
-<use pic/coulomb1.png>
-Package pdftex.def Info: pic/coulomb1.png used on input line 173.
-(pdftex.def)             Requested size: 185.65121pt x 126.50826pt.
- <pic/coulomb2.png, id=225, 699.21225pt x 535.40025pt>
-File: pic/coulomb2.png Graphic file (type png)
-
-<use pic/coulomb2.png>
-Package pdftex.def Info: pic/coulomb2.png used on input line 173.
-(pdftex.def)             Requested size: 164.3149pt x 125.81908pt.
-
-Overfull \hbox (7.6708pt too wide) in paragraph at lines 173--173
- [][] 
- []
-
-
-Overfull \vbox (10.9377pt too high) detected at line 173
- []
-
-File: pic/bkg.jpg Graphic file (type jpg)
-<use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 173.
-(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [8
-
- <./pic/coulomb1.png> <./pic/coulomb2.png>]
-<pic/diag_lowpt.pdf, id=254, 569.12625pt x 431.6125pt>
+<pic/diag_lowpt.pdf, id=219, 569.12625pt x 431.6125pt>
 File: pic/diag_lowpt.pdf Graphic file (type pdf)
 
 <use pic/diag_lowpt.pdf>
-Package pdftex.def Info: pic/diag_lowpt.pdf used on input line 186.
+Package pdftex.def Info: pic/diag_lowpt.pdf used on input line 194.
 (pdftex.def)             Requested size: 199.19717pt x 151.06664pt.
 
-<pic/diag_highpt.pdf, id=255, 569.12625pt x 431.6125pt>
+<pic/diag_highpt.pdf, id=220, 569.12625pt x 431.6125pt>
 File: pic/diag_highpt.pdf Graphic file (type pdf)
 
 <use pic/diag_highpt.pdf>
-Package pdftex.def Info: pic/diag_highpt.pdf used on input line 186.
+Package pdftex.def Info: pic/diag_highpt.pdf used on input line 194.
 (pdftex.def)             Requested size: 199.19717pt x 151.06664pt.
 
-Overfull \hbox (24.80086pt too wide) in paragraph at lines 186--186
+Overfull \hbox (24.80086pt too wide) in paragraph at lines 194--194
  | []| [] 
  []
 
 File: pic/bkg.jpg Graphic file (type jpg)
 <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 186.
+Package pdftex.def Info: pic/bkg.jpg used on input line 194.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [9
+ [7
 
  <./pic/diag_lowpt.pdf, page is rotated 90 degrees> <./pic/diag_highpt.pdf, pag
 e is rotated 90 degrees>]
-<pic/lambda3.pdf, id=325, 569.12625pt x 282.05376pt>
+<pic/lambda3.pdf, id=291, 569.12625pt x 282.05376pt>
 File: pic/lambda3.pdf Graphic file (type pdf)
  <use pic/lambda3.pdf>
-Package pdftex.def Info: pic/lambda3.pdf used on input line 198.
+Package pdftex.def Info: pic/lambda3.pdf used on input line 206.
 (pdftex.def)             Requested size: 341.47838pt x 169.23355pt.
 
-Overfull \hbox (5.18307pt too wide) in paragraph at lines 198--198
+Overfull \hbox (5.18307pt too wide) in paragraph at lines 206--206
  [][][][][][] 
  []
 
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 206.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 206.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 206.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 206.
 File: pic/bkg.jpg Graphic file (type jpg)
 <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 198.
+Package pdftex.def Info: pic/bkg.jpg used on input line 206.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [10
+ [8
 
  <./pic/lambda3.pdf, page is rotated 90 degrees>]
-<pic/kappa3.pdf, id=408, 569.12625pt x 282.05376pt>
+<pic/kappa3.pdf, id=374, 569.12625pt x 282.05376pt>
 File: pic/kappa3.pdf Graphic file (type pdf)
  <use pic/kappa3.pdf>
-Package pdftex.def Info: pic/kappa3.pdf used on input line 213.
+Package pdftex.def Info: pic/kappa3.pdf used on input line 222.
 (pdftex.def)             Requested size: 284.56242pt x 141.02652pt.
-File: pic/bkg.jpg Graphic file (type jpg)
 
-<use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 213.
-(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [11
-
- <./pic/kappa3.pdf, page is rotated 90 degrees>]
-<pic/cropped_fcpc1.pdf, id=481, 780.62442pt x 527.27286pt>
-File: pic/cropped_fcpc1.pdf Graphic file (type pdf)
-
-<use pic/cropped_fcpc1.pdf>
-Package pdftex.def Info: pic/cropped_fcpc1.pdf used on input line 230.
-(pdftex.def)             Requested size: 181.41609pt x 122.53336pt.
-
-<pic/cropped_fcpc2.pdf, id=482, 780.9175pt x 525.965pt>
-File: pic/cropped_fcpc2.pdf Graphic file (type pdf)
-
-<use pic/cropped_fcpc2.pdf>
-Package pdftex.def Info: pic/cropped_fcpc2.pdf used on input line 230.
-(pdftex.def)             Requested size: 181.41609pt x 122.18126pt.
-
-Overfull \hbox (10.86307pt too wide) in paragraph at lines 230--230
- | []| [] 
+Overfull \vbox (2.25665pt too high) detected at line 222
  []
 
 File: pic/bkg.jpg Graphic file (type jpg)
 <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 230.
+Package pdftex.def Info: pic/bkg.jpg used on input line 222.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [12
+ [9
+
+ <./pic/kappa3.pdf, page is rotated 90 degrees>]
+<pic/cropped_fcpc1.pdf, id=448, 780.62442pt x 527.27286pt>
+File: pic/cropped_fcpc1.pdf Graphic file (type pdf)
+
+<use pic/cropped_fcpc1.pdf>
+Package pdftex.def Info: pic/cropped_fcpc1.pdf used on input line 240.
+(pdftex.def)             Requested size: 181.41609pt x 122.53336pt.
+
+<pic/cropped_fcpc2.pdf, id=449, 780.9175pt x 525.965pt>
+File: pic/cropped_fcpc2.pdf Graphic file (type pdf)
+
+<use pic/cropped_fcpc2.pdf>
+Package pdftex.def Info: pic/cropped_fcpc2.pdf used on input line 240.
+(pdftex.def)             Requested size: 181.41609pt x 122.18126pt.
+
+Overfull \hbox (10.86307pt too wide) in paragraph at lines 240--240
+ | []| [] 
+ []
+
+
+Overfull \vbox (1.42146pt too high) detected at line 240
+ []
+
+File: pic/bkg.jpg Graphic file (type jpg)
+<use pic/bkg.jpg>
+Package pdftex.def Info: pic/bkg.jpg used on input line 240.
+(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
+ [10
 
  <./pic/cropped_fcpc1.pdf> <./pic/cropped_fcpc2.pdf
 
@@ -1790,16 +1784,43 @@ pdfTeX warning: pdflatex (file ./pic/cropped_fcpc2.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 247.
+(Font)              scaled to size 7.91925pt on input line 257.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 247.
+(Font)              scaled to size 7.91925pt on input line 257.
 File: pic/bkg.jpg Graphic file (type jpg)
  <use pic/bkg.jpg>
-Package pdftex.def Info: pic/bkg.jpg used on input line 247.
+Package pdftex.def Info: pic/bkg.jpg used on input line 257.
 (pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
- [13
+ [11
 
-]
+] <pic/coulomb1.png, id=622, 742.6067pt x 506.03426pt>
+File: pic/coulomb1.png Graphic file (type png)
+
+<use pic/coulomb1.png>
+Package pdftex.def Info: pic/coulomb1.png used on input line 277.
+(pdftex.def)             Requested size: 185.65121pt x 126.50826pt.
+ <pic/coulomb2.png, id=624, 699.21225pt x 535.40025pt>
+File: pic/coulomb2.png Graphic file (type png)
+
+<use pic/coulomb2.png>
+Package pdftex.def Info: pic/coulomb2.png used on input line 277.
+(pdftex.def)             Requested size: 164.3149pt x 125.81908pt.
+
+Overfull \hbox (7.6708pt too wide) in paragraph at lines 277--277
+ [][] 
+ []
+
+
+Overfull \vbox (10.9377pt too high) detected at line 277
+ []
+
+File: pic/bkg.jpg Graphic file (type jpg)
+<use pic/bkg.jpg>
+Package pdftex.def Info: pic/bkg.jpg used on input line 277.
+(pdftex.def)             Requested size: 364.19536pt x 273.14886pt.
+ [12
+
+ <./pic/coulomb1.png> <./pic/coulomb2.png>]
 \tf@nav=\write6
 \openout6 = `hbt.nav'.
 
@@ -1809,11 +1830,11 @@ Package pdftex.def Info: pic/bkg.jpg used on input line 247.
 \tf@snm=\write8
 \openout8 = `hbt.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
  (hbt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
 Package rerunfilecheck Info: File `hbt.out' has not changed.
 (rerunfilecheck)             Checksum: C7AB5F65A3FFDE71A7FF10EE0A30A50A;87.
 
@@ -1821,17 +1842,14 @@ Package rerunfilecheck Info: File `hbt.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
  ) 
 Here is how much of TeX's memory you used:
- 22512 strings out of 493334
- 442750 string characters out of 3130655
- 519033 words of memory out of 3000000
- 25430 multiletter control sequences out of 15000+200000
- 45420 words of font info for 126 fonts, out of 3000000 for 9000
+ 22530 strings out of 493334
+ 443147 string characters out of 3130655
+ 520219 words of memory out of 3000000
+ 25448 multiletter control sequences out of 15000+200000
+ 44929 words of font info for 124 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,59p,413b,820s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\qati\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
@@ -1857,9 +1875,9 @@ public/mathpazo/fplmr.pfb><C:/Users/qati/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/mathpazo/fplmri.pfb><C:/Users/qati/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/qati/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on hbt.pdf (13 pages, 3570966 bytes).
+Output written on hbt.pdf (12 pages, 4759945 bytes).
 PDF statistics:
- 717 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -28,10 +28,11 @@
 
 
 
-\title[HBT]{PHENIX results on three-particle Bose-Einstein correlations
-in $\sqrt{s_{NN}}=200$ GeV Au+Au collisions}
-\author[Attila Bagoly]{\Large{Attila Bagoly for the PHENIX Collaboration
-}\\ \vspace{0.1cm}}
+\title[HBT]{\Large{Search for coherent hadron emission with PHENIX}}
+\author[Attila Bagoly]{\large{Attila Bagoly for the PHENIX Collaboration
+}\\ \vspace{1cm}
+\small{55th International School of Subnuclear Physics, Erice, Sicily, 2017}
+}
 \date[\today]{\today}
 \institute[ELTE]{
 }
@@ -40,17 +41,70 @@ in $\sqrt{s_{NN}}=200$ GeV Au+Au collisions}
 
 \begin{frame}
   \titlepage
+  \begin{figure}
+  \hspace*{-8pt} \includegraphics[height=18mm]{pic/ELTE.png}\;\;
+   \includegraphics[height=18mm]{pic/erice.pdf}\;\;
+   \includegraphics[height=18mm]{pic/BNLPHENIX.pdf}
+  \end{figure}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Outline}
+%\begin{itemize}
+%\setlength{\itemsep}{14pt}
+%\item Introduction to three-particle Bose-Einstein correlations
+%\item Model and fit
+%\item Fit results
+%\item Physical Interpretations
+%\item Summary
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}
+\frametitle{Introduction to Bose-Einstein correlations}
+\begin{itemize}
+\setlength{\itemsep}{12pt}
+\item QGP created at RHIC and LHC
+\item Exploring space-time structure: Bose-Einstein correlations \\
+$\longrightarrow$ correlation between bosons due to Bose-Einstein statistics
+\item Two-particle BEC: connected to the source distribution $\mathcal{S}(r)$
+\item What about three-particle correlations?
+\item Core-Halo model: $\mathcal{S}=\mathcal{S}_{\rm core}+\mathcal{S}_{\rm halo}$ (primordial + resonance pions)
+\end{itemize}
+
+\begin{minipage}{0.4\textwidth}
+\begin{figure}
+\includegraphics[scale=0.3]{pic/corehalo2_eng}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.59\textwidth}
+\begin{equation*}
+C_2(p_1, p_2) =  1+\lambda_2|\mathcal{\tilde{S}}(p_1-p_2)|^2
+\end{equation*}
+\begin{equation*}
+\mathcal{\tilde{S}}(q) = \int \mathcal{S}(x)e^{iqx}d^4x
+\end{equation*}
+\begin{equation*}
+\sqrt{\lambda_2} =  f_C \equiv \frac{N^c}{N^c+N^h}
+\end{equation*}
+\end{minipage}
 \end{frame}
 
 \begin{frame}
-\frametitle{Outline}
+\frametitle{Coherence}
 \begin{itemize}
-\setlength{\itemsep}{14pt}
-\item Introduction to three-particle Bose-Einstein correlations
-\item Model and fit
-\item Fit results
-\item Physical Interpretations
-\item Summary
+\setlength{\itemsep}{28pt}
+\item If the core partially emits particles in coherent manner:
+\begin{equation*}
+\mathcal{S}_{\rm core}=\mathcal{S}_{\rm core}^{\rm pc}+\mathcal{S}_{\rm core}^{i}
+\end{equation*}
+where pc refers to partially coherent, i to incoherent
+
+\item Two particle correlation: $C_2(p_1, p_2) =  1+\lambda_2|\mathcal{\tilde{S}}(p_1-p_2)|^2$, but $\lambda_2 \neq f_C^2$
+\item Fraction of coherently produced pions:
+\begin{equation*}
+p_C \equiv \frac{N^{\rm coherent}}{N^{\rm coherent}+N^{\rm incoherent}} \rightarrow \lambda_2(f_C, p_C)
+\end{equation*}
 \end{itemize}
 \end{frame}
 
@@ -74,52 +128,15 @@ N_n(p_1,\dots,p_n)=\int \prod_{i=1}^{n}\mathcal{S}(x_i,p_i)|\Psi_{n}(\{x_i\})|^2
 \end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Core-Halo}
-\begin{itemize}
-\setlength{\itemsep}{20pt}
-\item Not all particles comes from QGP freeze out
-\item they also can come from decays
-\item Both part contribute to source function:
-\begin{equation*}
-\mathcal{S}=\mathcal{S}_{\rm core}+\mathcal{S}_{\rm halo}
-\end{equation*}
 
-\item Two particle correlation:
-\begin{equation*}
-C_2(k_1, k_2) =  1+\lambda_2|\mathcal{S}(q)|^2
-\end{equation*}
-where
-\begin{equation*}
-\sqrt{\lambda_2} =  f_C \equiv \frac{N^c}{N^c+N^h} 
-\end{equation*}
-\end{itemize}
-\end{frame}
 
-\begin{frame}
-\frametitle{Coherence}
-\begin{itemize}
-\setlength{\itemsep}{28pt}
-\item If the core partially emits particles in coherent manner:
-\begin{equation*}
-\mathcal{S}_{\rm core}=\mathcal{S}_{\rm core}^{\rm pc}+\mathcal{S}_{\rm core}^{i}
-\end{equation*}
-where pc refers to partially coherent, i to incoherent
-
-\item Two particle correlation: $C_2(k_1, k_2) =  1+\lambda_2|\mathcal{S}(q)|^2$, but $\lambda_2 \neq f_C^2$
-\item Fraction of coherently produced pions:
-\begin{equation*}
-p_C \equiv \frac{N_{\rm coherent}}{N^{\rm coherent}+N^{\rm incoherent}} \rightarrow \lambda_2(f_C, p_C)
-\end{equation*}
-\end{itemize}
-
-\end{frame}
 
 \section{Motivation}
 \begin{frame}
 \frametitle{Motivation behind three particle HBT analysis}
 \begin{itemize}
-\setlength{\itemsep}{20pt}
+\setlength{\itemsep}{8pt}
+\vspace*{-8pt}
 \item $n$-particle correlation strength: $\lambda_n \equiv C_n(0)-1$
 \item Core-Halo: \vspace*{-15pt}
 	\begin{align*}
@@ -132,17 +149,28 @@ p_C \equiv \frac{N_{\rm coherent}}{N^{\rm coherent}+N^{\rm incoherent}} \rightar
 		\lambda_3=2f_C^3\big[(1-p_C)^3+3p_C(1-p_C)^2\big]+3f_C^2\big[(1-p_C)^2+2p_C(1-p_C)\big]\nonumber\\
 		\kappa_3 = \kappa_3(p_C)
 	\end{gather*}
-\item From $\lambda_2$, $\lambda_3$ we can investigate the deviation from simple Core-Halo
 \end{itemize}
+\begin{minipage}{0.4\textwidth}
+\begin{figure}
+\vspace*{-24pt}\includegraphics[scale=0.25]{pic/pionlaser}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.59\textwidth}
+\begin{itemize}
+\setlength{\itemsep}{8pt}
+\vspace*{-40pt}\item From $\lambda_2$, $\lambda_3$ we can investigate the deviation from simple Core-Halo
+\item Search for partial coherence! pion-laser?
+\end{itemize}
+\end{minipage}
 \end{frame}
 
 \section{Model}
 \begin{frame}
-\frametitle{Model without Coulomb correction}
+\frametitle{Shape of the correlation function}
 \begin{itemize}
-\setlength{\itemsep}{22pt}
-
-\item Correlation function ($\mathcal{L}_3=2f_C^3$):
+\setlength{\itemsep}{20pt}
+\item Model to fit to data?
+\item Correlation function ($\ell_3=2f_C^3$):
 \begin{align*}
 C_3^{(0)}(k_{12}, k_{13}, k_{23}) = 1+ \ell_3e^{-0.5(|2k_{12}R_C|^\alpha+|2k_{13}R_C|^\alpha+|2k_{23}R_C|^\alpha)}\nonumber\\
 +\ell_2\bigg(e^{|2k_{12}R_C|^\alpha}+e^{|2k_{13}R_C|^\alpha}+e^{|2k_{23}R_C|^\alpha}\bigg)
@@ -152,26 +180,6 @@ C_3^{(0)}(k_{12}, k_{13}, k_{23}) = 1+ \ell_3e^{-0.5(|2k_{12}R_C|^\alpha+|2k_{13
 \item We are looking for: $\lambda_3 \equiv  C_3(k_{12}=k_{13}=k_{23}=0)-1=\ell_3+3\ell_2$
 \end{itemize}
 \end{frame}
-
-\begin{frame}
-\frametitle{Coulomb correction}
-\begin{itemize}
-\setlength{\itemsep}{16pt}
-\item Corrected model:
-\begin{equation*}
-C_3(k_{12}, k_{13}, k_{23}) = C_3^{(0)}(k_{12}, k_{13}, k_{23})\cdot K_3(k_{12}, k_{13}, k_{23})
-\end{equation*}
-\item ''Generalized Riverside'' method for 3 particle Coulomb problem
-\begin{equation*}
-K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
-\end{equation*}
-\end{itemize}
-\begin{figure}
-\includegraphics[scale=0.25]{pic/coulomb1}
-\includegraphics[scale=0.235]{pic/coulomb2}
-\end{figure}
-\end{frame}
-
 
 \begin{frame}
 \frametitle{Diagonal visualization of fits}
@@ -190,7 +198,7 @@ K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
 \frametitle{Three particle correlation strength: $\lambda_3$}
 \begin{itemize}
 \setlength{\itemsep}{10pt}
-\item $\lambda_3$ within Core-Halo  + chaotic emission range for all $m_T$
+\item Core-halo model: $0<\lambda_3<5$
 \end{itemize}
 \begin{figure}
 \colorbox{white}{\includegraphics[scale=0.6]{pic/lambda3}}
@@ -202,6 +210,7 @@ K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
 \begin{frame}
 \frametitle{Core-Halo independent parameter}
 \begin{itemize}
+\setlength{\itemsep}{4pt}
 \item $\kappa_3\equiv\frac{\lambda_3-3\lambda_2}{2\sqrt{\lambda_2^3}}$ not depend on $f_C$ ($f_C=\mathrm{core}/(\mathrm{core}+\mathrm{halo})$)
 \item Core-Halo + chaotic emission: $\kappa_3=1$
 \item additional effect (eg. not fully thermal): $\kappa_3\neq 1$
@@ -214,8 +223,9 @@ K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
 
 
 \begin{frame}
-\frametitle{Partial coherence ($p_c$) vs fractional core}
+\frametitle{Partial coherence ($p_C$) vs fractional core ($f_C$)}
 \begin{itemize}
+\setlength{\itemsep}{8pt}
 \vspace{-0.004\textheight}
 \item Simple theoretical model: $\lambda_2(f_c, p_c)$, $\lambda_3(f_c, p_c)$ 
 \item Measured $\lambda_2^{\rm meas.} \rightarrow \lambda_2^{\rm meas.}=\lambda_2(f_c,p_c) \Longrightarrow f_c(p_c)$ (green lines)
@@ -244,6 +254,26 @@ K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
 \item study detailed centrality and $\sqrt{s_{NN}}$ dependence
 \end{itemize}
 \end{itemize}
+\end{frame}
+
+
+\begin{frame}[noframenumbering]
+\frametitle{Coulomb correction}
+\begin{itemize}
+\setlength{\itemsep}{16pt}
+\item Corrected model:
+\begin{equation*}
+C_3(k_{12}, k_{13}, k_{23}) = C_3^{(0)}(k_{12}, k_{13}, k_{23})\cdot K_3(k_{12}, k_{13}, k_{23})
+\end{equation*}
+\item ''Generalized Riverside'' method for 3 particle Coulomb problem
+\begin{equation*}
+K_3(k_{12}, k_{13}, k_{23}) \approx K_1(k_{12})K_1(k_{13})K_1(k_{23})
+\end{equation*}
+\end{itemize}
+\begin{figure}
+\includegraphics[scale=0.25]{pic/coulomb1}
+\includegraphics[scale=0.235]{pic/coulomb2}
+\end{figure}
 \end{frame}
 
 
